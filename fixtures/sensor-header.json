@@ -1,0 +1,257 @@
+{
+  "kind": "sensor",
+  "session_id": "fixture-session",
+  "frame_id": 42,
+  "capture_time_s": 100.0,
+  "clock": "ios_host_monotonic_seconds",
+  "processing_start_s": 100.001,
+  "processing_end_s": 100.015,
+  "calibration_id": "synthetic-zero-distortion",
+  "application_version": "0.1.0",
+  "orientation": "native_up",
+  "mirrored": false,
+  "color_dimensions": [
+    64,
+    48
+  ],
+  "depth_dimensions": [
+    32,
+    24
+  ],
+  "payload_encoding": "depth_u16_mm_le",
+  "depth_accuracy": "absolute",
+  "depth_quality": "high",
+  "depth_filtered": false,
+  "landmarks": [
+    {
+      "name": "wrist",
+      "x": 0.5,
+      "y": 0.72,
+      "confidence": 0.95
+    },
+    {
+      "name": "thumbCMC",
+      "x": 0.32,
+      "y": 0.62,
+      "confidence": 0.95
+    },
+    {
+      "name": "thumbMP",
+      "x": 0.25,
+      "y": 0.52,
+      "confidence": 0.95
+    },
+    {
+      "name": "thumbIP",
+      "x": 0.2,
+      "y": 0.42,
+      "confidence": 0.95
+    },
+    {
+      "name": "thumbTip",
+      "x": 0.18,
+      "y": 0.32,
+      "confidence": 0.95
+    },
+    {
+      "name": "indexMCP",
+      "x": 0.38,
+      "y": 0.45,
+      "confidence": 0.95
+    },
+    {
+      "name": "indexPIP",
+      "x": 0.36,
+      "y": 0.34,
+      "confidence": 0.95
+    },
+    {
+      "name": "indexDIP",
+      "x": 0.34,
+      "y": 0.23,
+      "confidence": 0.95
+    },
+    {
+      "name": "indexTip",
+      "x": 0.32,
+      "y": 0.15,
+      "confidence": 0.95
+    },
+    {
+      "name": "middleMCP",
+      "x": 0.5,
+      "y": 0.42,
+      "confidence": 0.95
+    },
+    {
+      "name": "middlePIP",
+      "x": 0.5,
+      "y": 0.3,
+      "confidence": 0.95
+    },
+    {
+      "name": "middleDIP",
+      "x": 0.5,
+      "y": 0.19,
+      "confidence": 0.95
+    },
+    {
+      "name": "middleTip",
+      "x": 0.5,
+      "y": 0.1,
+      "confidence": 0.95
+    },
+    {
+      "name": "ringMCP",
+      "x": 0.58,
+      "y": 0.43,
+      "confidence": 0.95
+    },
+    {
+      "name": "ringPIP",
+      "x": 0.6,
+      "y": 0.32,
+      "confidence": 0.95
+    },
+    {
+      "name": "ringDIP",
+      "x": 0.62,
+      "y": 0.22,
+      "confidence": 0.95
+    },
+    {
+      "name": "ringTip",
+      "x": 0.64,
+      "y": 0.14,
+      "confidence": 0.95
+    },
+    {
+      "name": "littleMCP",
+      "x": 0.65,
+      "y": 0.45,
+      "confidence": 0.95
+    },
+    {
+      "name": "littlePIP",
+      "x": 0.7,
+      "y": 0.37,
+      "confidence": 0.95
+    },
+    {
+      "name": "littleDIP",
+      "x": 0.74,
+      "y": 0.3,
+      "confidence": 0.95
+    },
+    {
+      "name": "littleTip",
+      "x": 0.78,
+      "y": 0.24,
+      "confidence": 0.95
+    }
+  ],
+  "chirality": "right",
+  "tracking_error": null,
+  "calibration": {
+    "alignment": "truedepth_color_fov",
+    "intrinsics_row_major": [
+      [
+        80.0,
+        0,
+        32.0
+      ],
+      [
+        0,
+        80.0,
+        24.0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_dimensions": [
+      64,
+      48
+    ],
+    "distortion_center": [
+      32.0,
+      24.0
+    ],
+    "lens_distortion_lut": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inverse_lens_distortion_lut": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "color_from_reference": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "depth_from_reference": [
+      [
+        0.5,
+        0,
+        0
+      ],
+      [
+        0,
+        0.5,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "extrinsics_camera_to_reference_row_major_mm": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "extrinsic_from": "calibrated_camera",
+    "extrinsic_to": "apple_reference_camera",
+    "extrinsic_translation_units": "millimetres",
+    "extrinsic_applied_to_pose": false,
+    "pixel_size_mm": 0.001,
+    "crop": "none",
+    "resize": "native_output_dimensions",
+    "orientation": "native_up",
+    "mirrored": false,
+    "lut_point_mapping": "sdk_reference_forward_rectified_to_distorted_inverse_distorted_to_rectified"
+  }
+}

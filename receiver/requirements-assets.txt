@@ -1,0 +1,4 @@
+-r requirements-teleop.txt
+trimesh==5.1.1
+xacro==2.1.1
+pycollada==0.9.3

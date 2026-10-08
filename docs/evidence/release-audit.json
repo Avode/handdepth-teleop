@@ -1,0 +1,13 @@
+{
+  "scanner": "Gitleaks 8.30.1",
+  "scope": "Clean public source tree; no original Git history",
+  "findings": 0,
+  "excluded": [
+    "Raw recordings and calibration/device logs",
+    "Secrets, keys, signing identities and environment files",
+    "Virtual environments and caches",
+    "Upstream robot assets and model weights",
+    "Mac-only Swift app source (unavailable)"
+  ],
+  "note": "Pattern-based scanning and manual file selection reduce disclosure risk; this is not proof that arbitrary secrets can never be present."
+}
