@@ -118,6 +118,7 @@ def test_relative_wrist_rotation_axes_and_missing_measurements(header,side,axis)
 
 
 def test_wrist_jacobian_does_not_recruit_upstream_joints():
+    if not DEFAULT_SCENE.exists():pytest.skip('installed G2 scene required')
     c=Controller(DEFAULT_SCENE,arm_mapping='limb',wrist_mapping='relative');q=c.cfg.q.copy()
     for side,task in c.wrist_tasks.items():
         task.set_target_from_configuration(c.cfg);jac=task.compute_jacobian(c.cfg)[3:]
