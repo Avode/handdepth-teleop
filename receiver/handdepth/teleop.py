@@ -3,6 +3,7 @@ import asyncio
 from collections import deque
 import json
 import logging
+import os
 from pathlib import Path
 from queue import SimpleQueue
 import threading
@@ -13,7 +14,7 @@ from .recording import check_recording_root, Recorder, DEFAULT_ROOT
 from .server import Receiver
 
 log=logging.getLogger('handdepth.teleop')
-DEFAULT_SCENE=Path('/mnt/robotics-data/robotics/agibot-g2/projects/handdepth/scene.xml')
+DEFAULT_SCENE=Path(os.environ.get('HANDDEPTH_G2_SCENE','/mnt/robotics-data/robotics/agibot-g2/projects/handdepth/scene.xml'))
 
 
 class Controller:
