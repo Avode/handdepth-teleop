@@ -4,7 +4,7 @@
   "failures": 0,
   "errors": 0,
   "skipped": 0,
-  "elapsed_seconds": 24.757,
+  "elapsed_seconds": 26.524,
   "source_scope": "Public Ubuntu release snapshot",
   "model": "Separately rebuilt from pinned upstream G2 model and SRDF sources using the public converter",
   "upstream_robot_commit": "6d5b2159806ae0e64b432b638e9ee288d8bddc8f",
@@ -15,5 +15,11 @@
     "Existing installed Python runtime was reused for validation; a clean Internet dependency installation was not repeated.",
     "Human recorded-input comparisons are historical and their raw recordings are not distributed.",
     "Swift sender app is not included."
-  ]
+  ],
+  "without_model_assets": {
+    "tests_passed": 240,
+    "tests_skipped": 28,
+    "failures": 0,
+    "reason": "G2 asset-dependent tests skipped explicitly"
+  }
 }
